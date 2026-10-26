@@ -25,7 +25,7 @@
 <body>
 <main>
 <h1>Bekzitz Privacy Policy</h1>
-<p class="meta">Last updated: 15 October 2026</p>
+<p class="meta">Last updated: 26 October 2026</p>
 
 <p>Bekzitz is an Android app that reminds you to check the back seat when you leave your car. This policy explains what the app uses and what happens to it.</p>
 
@@ -40,7 +40,11 @@
   </tr>
   <tr>
     <td>Nearby devices (Bluetooth)</td>
-    <td>Optional. With this permission the app sees when Bluetooth devices connect to and disconnect from your phone, so it can tell when you get into and out of the car you selected. The name and address of the cars you select are stored on your phone only.</td>
+    <td>Optional. With this permission the app sees when Bluetooth devices connect to and disconnect from your phone, so it can tell when you get into and out of the car you selected. The name and address of the cars you select are stored on your phone only. The app does not search for devices and does not find out where they are.</td>
+  </tr>
+  <tr>
+    <td>Sound in the car</td>
+    <td>With Car Bluetooth on, the question and the reminder play through your car's speakers. The app sends its own sound to the car the way a hands-free call does. No phone call is made, nothing is recorded, and the app does not request the microphone permission.</td>
   </tr>
   <tr>
     <td>Notifications, exact alarms and sound</td>
@@ -48,11 +52,15 @@
   </tr>
   <tr>
     <td>Foreground service, start at boot</td>
-    <td>While you drive, a notification-backed service keeps the step counter running. After a restart or an app update the app re-registers drive detection.</td>
+    <td>While you drive, a notification-backed service keeps the step counter running. While Car Bluetooth detection is on, a second service with a silent notification ("Bekzitz is ready for your car") keeps the app running, so it notices at once when your car connects and disconnects. It stops when you turn Car Bluetooth detection off. After a restart or an app update the app re-registers drive detection.</td>
+  </tr>
+  <tr>
+    <td>Battery settings</td>
+    <td>The app asks you to turn off battery optimization for it and, on Honor and Huawei phones, to allow it in App launch, so the phone does not stop it in the background. The app only opens the Android settings screen; you make the change yourself. On Honor and Huawei the app stores your answer whether App launch is set.</td>
   </tr>
   <tr>
     <td>Your choices</td>
-    <td>Settings such as theme, reminder sound and volume, your own reminder texts if you write them, selected cars, and whether you answered "yes" to a trip. These are stored on your phone.</td>
+    <td>Settings such as theme, how driving is detected and whether detection is on, reminder sound and volume, your own reminder texts if you write them, selected cars, and whether you answered "yes" to a trip. These are stored on your phone.</td>
   </tr>
 </table>
 
